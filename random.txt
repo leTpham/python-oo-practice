@@ -1,0 +1,14 @@
+DOG
+CAT
+WOOF
+HELLO
+
+# Veggies
+
+kale
+parsnips
+
+# Fruits
+
+apple
+mango
