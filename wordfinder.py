@@ -20,11 +20,12 @@ class WordFinder:
         # return [line for line in file]
         return choice(self.file)
 
+
 class SpecialWordFinder(WordFinder):
     """subclass of WordFinder"""
     def __init__(self, file_name):
         super().__init__(file_name)
 
     def call_file(self, file):
-        return [item.strip() for item in open(file) if not item.startswith('#') or item == '']
+        return [item for item in super().call_file(file) if (not item.startswith('#') and len(item) > 0)]
 
